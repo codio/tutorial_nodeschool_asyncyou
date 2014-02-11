@@ -7,8 +7,8 @@ if [[ "$#" -ne 3 ]]; then
 fi
 
 # Translate lesson name into correct name for Workshopper projects
-if [ $2 == "hello_world" ]; then
-    STR="HELLO WORLD"
+if [ $2 == "waterfall" ]; then
+    STR="WATERFALL"
 elif [ $2 == "baby_steps" ]; then
     STR="BABY STEPS"
 elif [ $2 == "my_first_io" ]; then
@@ -40,13 +40,13 @@ fi
 echo SELECTED FILE IS : $STR
 
 #Select the workshopper lesson
-learnyounode select $STR > /dev/null
+async-you select $STR > /dev/null
 
 # Run or Verify?
 if [ $1 == "run" ]; then
-    learnyounode run $3/$2.js
+    async-you run $3/$2.js
 elif [ $1 == "verify" ]; then
-    learnyounode verify $3/$2.js
+    async-you verify $3/$2.js
 else 
     echo "BAD COMMAND"
 fi

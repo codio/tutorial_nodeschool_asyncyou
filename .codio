@@ -3,10 +3,10 @@
 
   // Run button configuration
   "commands": { 
-    "Install Learnyounode" : "npm install -g learnyounode",    
+    "Install Async You" : "npm install -g async-you",    
     "Run Lesson" : "./ns-executes.sh run {{filename_no_ext}} {{path}}",
     "Verify Lesson" : "./ns-executes.sh verify {{filename_no_ext}} {{path}}",
-    "Completed Lessons" : "learnyounode",
+    "Completed Lessons" : "async-you",
     "Run with Node" : "node {{filepath}} 3 4 5"
   }
 }
