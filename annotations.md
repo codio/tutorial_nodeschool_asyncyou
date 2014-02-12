@@ -3,7 +3,7 @@
 ##Challenge
 In Node.js and browsers there is three ways to do **asynchronous** JavaScript.
 
-The first way leads to what we call {italic}Callback Hell{/italic}. Callback Hell can be minimized by following the tips at [http://callbackhell.com](http://callbackhell.com).
+The first way leads to what we call *Callback Hell*. Callback Hell can be minimized by following the tips at [http://callbackhell.com](http://callbackhell.com).
 
 Another method is to use a Promise package. Using promises will simplify your code but it also adds another layer of abstraction.
 
@@ -11,7 +11,7 @@ The last method is by using the [async package by Caolan McMahon](https://www.np
 
 More often than not you will need to do multiple asynchronous calls one after the other with each call dependant on the result of previous asynchronous call. We can do this with the help of async.waterfall.
 
-For example the following code will do a GET request to http://localhost:3131 in the first waterfall function. The response body is pased as an argument to the next waterfall function via the callback. The second function in the waterfall accepts the body as a parameter and JSON.parse's it to get to the port property then it does another GET request.
+For example the following code will do a GET request to http://localhost:3131 in the first waterfall function. The response body is passed as an argument to the next waterfall function via the callback. The second function in the waterfall accepts the body as a parameter and JSON.parse's it to get to the port property then it does another GET request.
 
     var http = require('http')
       , async = require('async');
@@ -105,7 +105,7 @@ Instead of using an array as the result container async.series can use an object
 
 
 Write a program that will receive two URLs as the first and second command-line arguments.
-Using `http.get` create a GET request to to these urls and pass the response body to the callback.
+Using `http.get` create a GET request to these urls and pass the response body to the callback.
 
 Pass in an object of task functions using the property names `requestOne` and `requestTwo`
 to [async.series](https://www.npmjs.org/package/async#series).
@@ -236,7 +236,7 @@ Write a program that will receive a single command line argument to a URL. Using
 `console.log` the amount of GET requests needed to retrieve the meerkat string.
 
 ##Hint
-String.prototype.trim() is your friend.
+`String.prototype.trim()` is your friend.
 
 
 

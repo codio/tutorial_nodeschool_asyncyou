@@ -9,30 +9,18 @@ fi
 # Translate lesson name into correct name for Workshopper projects
 if [ $2 == "waterfall" ]; then
     STR="WATERFALL"
-elif [ $2 == "baby_steps" ]; then
-    STR="BABY STEPS"
-elif [ $2 == "my_first_io" ]; then
-    STR="MY FIRST I/O!"
-elif [ $2 == "my_first_async_io" ]; then
-    STR="MY FIRST ASYNC I/O!"
-elif [ $2 == "filtered_ls" ]; then
-    STR="FILTERED LS"
-elif [ $2 == "make_it_modular" ]; then
-    STR="MAKE IT MODULAR"
-elif [ $2 == "http_client" ]; then
-    STR="HTTP CLIENT"
-elif [ $2 == "http_collect" ]; then
-    STR="HTTP COLLECT"
-elif [ $2 == "juggling_async" ]; then
-    STR="JUGGLING ASYNC"
-elif [ $2 == "time_server" ]; then
-    STR="TIME SERVER"
-elif [ $2 == "http_file_server" ]; then
-    STR="HTTP FILE SERVER"
-elif [ $2 == "http_uppercaserer" ]; then
-    STR="HTTP UPPERCASERER"
-elif [ $2 == "http_json_api_server" ]; then
-    STR="HTTP JSON API SERVER"
+elif [ $2 == "series_object" ]; then
+    STR="SERIES OBJECT"
+elif [ $2 == "each" ]; then
+    STR="EACH"
+elif [ $2 == "map" ]; then
+    STR="MAP"
+elif [ $2 == "times" ]; then
+    STR="TIMES"
+elif [ $2 == "reduce" ]; then
+    STR="REDUCE"
+elif [ $2 == "whilst" ]; then
+    STR="WHILST"
 else
     echo UNKNOWN: Make sure you have your code file selected before running/verifying
     exit 0
@@ -40,13 +28,13 @@ fi
 echo SELECTED FILE IS : $STR
 
 #Select the workshopper lesson
-async-you select $STR > /dev/null
+async_you select $STR > /dev/null
 
 # Run or Verify?
 if [ $1 == "run" ]; then
-    async-you run $3/$2.js
+    async_you run $3/$2.js
 elif [ $1 == "verify" ]; then
-    async-you verify $3/$2.js
+    async_you verify $3/$2.js
 else 
     echo "BAD COMMAND"
 fi
