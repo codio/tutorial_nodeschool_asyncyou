@@ -28,13 +28,13 @@ fi
 echo SELECTED FILE IS : $STR
 
 #Select the workshopper lesson
-async_you select $STR > /dev/null
+async-you select $STR > /dev/null
 
 # Run or Verify?
 if [ $1 == "run" ]; then
-    async_you run $3/$2.js
+    async-you run $3/$2.js
 elif [ $1 == "verify" ]; then
-    async_you verify $3/$2.js
+    async-you verify $3/$2.js
 else 
     echo "BAD COMMAND"
 fi

@@ -62,6 +62,9 @@ For example the following code will do a GET request to http://localhost:3131 in
 
 In this problem you will need to write a program that first reads the contents of a file. The path will be provided as the first command-line argument to your program. The file will contain a single URL. Using `http.get` create GET request to to this url and `console.log` the response body.
 
+##Hint
+
+You will need to `npm install async` to get started with this exercise.
 
 
 @annotation:tour series_object
