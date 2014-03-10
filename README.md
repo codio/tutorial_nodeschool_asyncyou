@@ -2,7 +2,8 @@
 #Tutorial 09 - Async You
 **Learn to use the async package.**
 
-*All content is written and produced by [http://nodeschool.io](http://nodeschool.io). Please see the credits at the bottom of this page and if you have learnt a lot from these tutorials, please make a donation (also at the bottom).*
+###About the Author###
+This tutorial was written by [Bulkan Encimen](https://github.com/bulkan). If you find this tutorial helpful and you'd like to say thanks to Bulkan, why not [make a small donation here?](https://www.gittip.com/bulkan)
 
 #Video
 If you prefer a video rather than reading the instructions below, there is a video that runs through the Codio + Nodeschool.io system (yes, it's a tutorial on how to use the tutorial) : [https://vimeo.com/86100550](https://vimeo.com/86100550)
